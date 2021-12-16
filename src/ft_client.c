@@ -6,7 +6,7 @@
 /*   By: dabel-co <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/13 17:53:41 by dabel-co          #+#    #+#             */
-/*   Updated: 2021/12/15 19:07:28 by dabel-co         ###   ########.fr       */
+/*   Updated: 2021/12/16 13:12:48 by dabel-co         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ int	main(int argc, char **argv)
 	int pid;
 	int i;
 
-	if (argc != 3 || !argv[1] || !argv[2])
+	if (argc != 3 || !argv[1] || !argv[2] || ft_strlen(argv[2]) == 0)
 		return (0);
 	i = 0;
 	pid = ft_atoi(argv[1]);

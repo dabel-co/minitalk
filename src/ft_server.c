@@ -6,7 +6,7 @@
 /*   By: dabel-co <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/13 16:16:08 by dabel-co          #+#    #+#             */
-/*   Updated: 2021/12/15 19:06:15 by dabel-co         ###   ########.fr       */
+/*   Updated: 2021/12/16 13:09:45 by dabel-co         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int counter = 0;
 
 static void	ft_recive_char(int bit)
 {
-	char x;
+	static char x;
 
 	if (counter == 0)
 		x = 0;
@@ -50,6 +50,5 @@ int main()
 	sigaction(SIGUSR2, &sa, NULL);
 	while (1)
 	{
-
 	}
 }
